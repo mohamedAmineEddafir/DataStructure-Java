@@ -37,7 +37,7 @@ public class Stack_LinkedList_Imp<T> {
             return null;                            // Return null to indicate an empty stack
         } else {
             Node<T> temp = Top;                     // Temporary pointer to the top node
-            T ruleBackItem = temp.item;                 // Store the item to return
+            T ruleBackItem = temp.item;             // Store the item to return
             Top = Top.next;                         // Move Top to the next node
             temp.next = null;                       // (Optional) Disconnect the old node for clarity
             return ruleBackItem;                    // Return the popped item
