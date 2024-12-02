@@ -152,16 +152,14 @@ public class QueueUsingLinkedList<T> {
         System.out.println("Original Queue : ");
         queue.printQueue();
 
-        System.out.println(" ");
-        System.out.println("Dropped Sid : ");
+        System.out.println("\nDropped Sid : ");
         queue.dequeue();
         queue.dequeue();
 
-        System.out.println(" ");
-        System.out.println("Queue after dequeue process : ");
+        System.out.println("\nQueue after dequeue process : ");
         queue.printQueue();
-        System.out.println(" ");
-        System.out.println("The front of Queue is             : " + queue.getFront());
+
+        System.out.println("\nThe front of Queue is             : " + queue.getFront());
         System.out.println("the element Number in my queue is : "+ queue.getCount());
     }
 
